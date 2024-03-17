@@ -122,10 +122,45 @@
 // }
 
 
+// class person{
+//     String name;
+//     int age;
+    
+//     person(String name, int age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// class employee extends person{
+//     int empid ;
+//     int empsal;
+    
+//     employee(String name, int age,int id, int salary){
+//         super(name,age);
+//         empid = id;
+//         empsal = salary;
+//     }
+//     void printdetails(){
+//         System.out.println("Employee name :" + name);
+//         System.out.println("Employee name :" + age);
+//         System.out.println("Employee name :" + empid);
+//         System.out.println("Employee name :" + empsal);
+//     }
+// }
+
+// public class emp{
+//     public static void main(String args[]){
+//         employee emp  =  new employee("arun",12,23,234);
+        
+//         emp.printdetails();
+//     }
+// }
+
+
 class person{
     String name;
     int age;
-    
     person(String name, int age){
         this.name = name;
         this.age = age;
@@ -133,13 +168,15 @@ class person{
 }
 
 class employee extends person{
-    int empid ;
+    int empid;
     int empsal;
     
-    employee(String name, int age,int id, int salary){
-        super(name,age);
+    employee(String name, int age, int id, int salary){
+        super(name, age);
         empid = id;
         empsal = salary;
+        
+        
     }
     void printdetails(){
         System.out.println("Employee name :" + name);
@@ -151,8 +188,7 @@ class employee extends person{
 
 public class emp{
     public static void main(String args[]){
-        employee emp  =  new employee("arun",12,23,234);
-        
+        employee emp = new employee("dhanushkumar",12,34,23546);
         emp.printdetails();
     }
 }
